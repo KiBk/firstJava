@@ -10,7 +10,7 @@ public static BigInteger fib(BigInteger n) {
 
 public static void main(String[] args) {
     ExecutorService executorService = Executors.newFixedThreadPool(10);
-    for (int j = 0; j < 10; j++) {
+    for (int j = 0; j < 1; j++) { // the difficulty
         final int ID = j;
         executorService.submit(new Runnable() {
 
