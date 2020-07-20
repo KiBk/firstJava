@@ -15,7 +15,7 @@ public static void main(String[] args) {
         executorService.submit(new Runnable() {
 
             public void run() {
-                for (int i=0;i < Integer.MAX_VALUE; i++) {
+                for (int i=0;i < 102334155; i++) { // another diffuculty Integer.MAX_VALUE
                     System.out.println(ID+" worker: "+i + ": " + fib(new BigInteger(String.valueOf(i))));
                 }
             }
